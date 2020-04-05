@@ -2,9 +2,15 @@
 Open Cities AI Challenge: Segmenting Buildings for Disaster Resilience
 Jeetendra Gan (jgan2@buffalo.edu), Karun Parashar(karunpar@buffalo.edu), Chandana Singh(csingh@buffalo.edu)
 
+
 Project description:
 
 Our project is based on a challenge hosted on Driven Data (https://www.drivendata.org/). The goal in this challenge is to segment building footprints from aerial imagery. The data consists of drone imagery from 10 different cities and regions across Africa. Our goal is to identify the presence or absence of a building on a pixel-by-pixel basis.  
+
+Prediction UI
+
+![UI](/UI_sample.png)
+
 
 Machine Learning Methods:
 
