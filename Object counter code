@@ -1,0 +1,12 @@
+ret, labels = cv.connectedComponents(prediction)
+label_hue = np.uint8(179 * labels / np.max(labels))
+blank_ch = 255 * np.ones_like(label_hue)
+labeled_img = cv.merge([label_hue, blank_ch, blank_ch])
+labeled_img = cv.cvtColor(labeled_img, cv.COLOR_HSV2BGR)
+labeled_img[label_hue == 0] = 0
+
+# plt.subplot(222)
+plt.title('Objects counted:'+ str(ret-1))
+imshow(labeled_img)
+print('objects number is:', ret-1)
+plt.show()
